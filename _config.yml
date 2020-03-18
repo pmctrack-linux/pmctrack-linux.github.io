@@ -47,6 +47,9 @@ defaults:
     values:
       hero_height: 1000px
 
+jekyll-mentions:
+    base_url: https://github.com
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
