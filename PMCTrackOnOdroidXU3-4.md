@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PMCTrack on Odroid-XU3/4
-permalink: /install/pmctrack-on-odroid-xu3-4
+permalink: /install/pmctrack-on-odroid-xu3-4/
 toc: true
 ---
 
