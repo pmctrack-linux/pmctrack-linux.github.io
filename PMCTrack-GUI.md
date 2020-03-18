@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PMCTrack-GUI
-permalink: /gui
+permalink: /gui/
 ---
 
 <!--

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About us
-permalink: /about-us
+permalink: /about-us/
 ---
 
 ### Project Contributors

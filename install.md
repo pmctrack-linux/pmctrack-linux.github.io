@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Install
-permalink: /install
+permalink: /install/
 toc: true
 ---
 

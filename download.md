@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Download
-permalink: /download
+permalink: /download/
 ---
 
 Click [here][2] to **download the latest version** of PMCTrack.
