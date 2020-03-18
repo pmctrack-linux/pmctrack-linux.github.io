@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
+    <style>
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a.blue {
+    background-color:#1874cd;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#4f9eea),to(#1874cd));
+    background-image:-webkit-linear-gradient(top,#4f9eea,#1874cd);
+    background-image:-moz-linear-gradient(top,#4f9eea,#1874cd);
+    background-image:-ms-linear-gradient(top,#4f9eea,#1874cd);
+    background-image:-o-linear-gradient(top,#4f9eea,#1874cd);
+    background-image:linear-gradient(top,#4f9eea,#1874cd);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4f9eea, endColorstr=#1874cd)
+    }
+    
+    a.blue:hover {
+    background-color:#7db7f0;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#7db7f0),to(#1874cd));
+    background-image:-webkit-linear-gradient(top,#7db7f0,#1874cd);
+    background-image:-moz-linear-gradient(top,#7db7f0,#1874cd);
+    background-image:-ms-linear-gradient(top,#7db7f0,#1874cd);
+    background-image:-o-linear-gradient(top,#7db7f0,#1874cd);
+    background-image:linear-gradient(top,#7db7f0,#1874cd);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7db7f0, endColorstr=#1874cd)
+    }
+
+    a.blue,
+    a.blue:hover {
+     border:1px solid #115290;
+     color:#fff;
+     text-shadow:0 -1px 0 #115290
+    }
+    
+    a.button:active,
+    input[type=reset]:active,
+    input[type=button]:active,
+    input[type=submit]:active {
+     background-color:#f9f9f9;
+     background-image:-webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#f1f1f1));
+     background-image:-webkit-linear-gradient(top,#f9f9f9,#f1f1f1);
+     background-image:-moz-linear-gradient(top,#f9f9f9,#f1f1f1);
+     background-image:-ms-linear-gradient(top,#f9f9f9,#f1f1f1);
+     background-image:-o-linear-gradient(top,#f9f9f9,#f1f1f1);
+     background-image:linear-gradient(top,#f9f9f9,#f1f1f1);
+     -webkit-box-shadow:0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.1);
+     -moz-box-shadow:0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.1);
+     box-shadow:0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.1);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f9f9f9, endColorstr=#f1f1f1)
+    }
+    .call-to-action a.button {
+     padding:15px 35px;
+     font-size:24px
+     align: center;
+    }
+.call-to-action a.button:hover {
+ text-decoration:none
+}
+.ie7 .call-to-action a.button {
+ padding:11px 35px 19px
+}
+    </style>
+    <link rel="shortcut icon" type="image/png"
+          {% if site.favicon %} href="{{ site.favicon | prepend: site.baseurl }}" {% else %} href="{{ site.baseurl }}/favicon.png" {% endif %}
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    {% seo %}
+    {%- if site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+    {%- include head-scripts.html -%}
+</head>
