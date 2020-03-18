@@ -1,0 +1,36 @@
+style: is-light
+height: is-medium
+items:
+  - title: Get the latest version of PMCTrack
+#    subtitle: Example subtitle 3
+    icon: fas fa-download
+#    description: >
+#      Download the latest version of PMCTrack.
+    call_to_action_name: Download 
+    call_to_action_link: https://github.com/jcsaezal/pmctrack/archive/master.zip
+  - title: Browse Github source code repository
+#    subtitle: Example subtitle 3
+    icon: fab fa-github 
+#    description: >
+#      Download the latest version of PMCTrack.
+    call_to_action_name: Browse source code
+    call_to_action_link: https://github.com/jcsaezal/pmctrack
+  - title: Check out install & build instructions
+#    subtitle: Example subtitle 2
+    icon: fa-wrench
+#    description: >
+#      The example description text goes here and can be multiple lines.
+
+#     For example, such as this.
+    call_to_action_name: Installation
+    call_to_action_link: /install/
+  - title: If you use PMCTrack, please cite our work
+#    subtitle: Example subtitle 1
+    icon: fa-space-shuttle
+#   description: >
+#      The example description text goes here and can be multiple lines.
+#     For example, such as this. 
+    call_to_action_name: Cite
+    call_to_action_link: /about-us/#publications
+
+
