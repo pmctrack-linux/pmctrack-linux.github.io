@@ -1,15 +1,15 @@
 - name: News
-  link: /news/
+  link: /news
 - name: Download
-  link: /download/
+  link: /download
 - name: Install
-  link: /install/
+  link: /install
   dropdown: 
     - name: General information
-      link: /install/
+      link: /install
     - name: PMCTrack on Odroid-XU3/4
       link: /install/pmctrack-on-odroid-xu3-4
 - name: PMCTrack-GUI
-  link: /gui/
+  link: /gui
 - name: About us
-  link: /about-us/
+  link: /about-us
