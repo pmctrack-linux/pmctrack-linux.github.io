@@ -8,6 +8,7 @@ permalink: /about-us/
 
 *   Juan Carlos Sáez Alcaide (<jcsaezal@ucm.es>) - Creator of PMCTrack and main maintainer. 
 *   Jorge Casas Hernán (<jorcasas@ucm.es>) - Maintainer of PMCTrack-GUI
+*   Adrián García García (aka [@Mizadri](https://github.com/mizadri))
 *   Abel Serrano Juste (aka [@Akronix][1])
 *   Javier Setoain
 
