@@ -9,6 +9,8 @@
       link: /install/
     - name: PMCTrack on Odroid-XU3/4
       link: /install/pmctrack-on-odroid-xu3-4/
+- name: Getting Started
+  link: /getting-started/
 - name: PMCTrack-GUI
   link: /gui/
 - name: About us
