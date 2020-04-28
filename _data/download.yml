@@ -31,6 +31,6 @@ items:
 #      The example description text goes here and can be multiple lines.
 #     For example, such as this. 
     call_to_action_name: Cite
-    call_to_action_link: /about-us/#publications
+    call_to_action_link: /publications
 
 
