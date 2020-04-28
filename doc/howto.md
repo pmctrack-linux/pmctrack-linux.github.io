@@ -28,7 +28,7 @@ $ bundle install
 * Google Analytics Tag:
 	- `google_analytics` property in `_config.yml`	
 
-
+	
 
 
 
