@@ -13,6 +13,8 @@
   link: /getting-started/
 - name: PMCTrack-GUI
   link: /gui/
+- name: PMCSched
+  link: https://zildj1an.github.io/pmcsched-website/
 - name: Publications
   link: /publications/  
 - name: About us
