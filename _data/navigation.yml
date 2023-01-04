@@ -14,7 +14,7 @@
 - name: PMCTrack-GUI
   link: /gui/
 - name: PMCSched
-  link: https://zildj1an.github.io/pmcsched-website/
+  link: /pmcsched/
 - name: Publications
   link: /publications/  
 - name: About us
