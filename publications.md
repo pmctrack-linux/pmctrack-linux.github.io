@@ -13,6 +13,7 @@ permalink: /publications/
 ## Other publications
 
 Journal articles, conference papers and Master's theses using or extending PMCTrack: 
+* C. Bilbao, J. C. Saez and M. Prieto-Matias. *Rapid development of OS support with PMCSched for scheduling on asymmetric multicore systems*. Proceedings of Euro-Par 2022: Parallel Processing Workshops *(to appear)*. Springer. [PDF](/assets/papers/heteropar22-185.pdf)
 
 * J. C. Saez and M. Prieto-Matias. *Evaluation of the Intel Thread Director technology on an Alder Lake processor*. Proceedings of the 13th ACM SIGOPS Asia-Pacific Workshop on Systems (APSys '22): pp. 61–67 (2022). ACM. ISBN: 978-1-4503-9441-3. DOI: [10.1145/3546591.3547532](https://doi.org/10.1145/3546591.3547532). [PDF](/assets/papers/apsys22-saez.pdf)
 
