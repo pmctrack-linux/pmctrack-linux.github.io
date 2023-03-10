@@ -13,9 +13,25 @@ http://pmctrack.dacya.ucm.es/install/
 
 ### System requirements
 
-To support PMCTrack, a patched Linux kernel must be installed on the machine. A number of kernel patches for various Linux versions can be found in the [`src/kernel-patches`][1] directory of [PMCTrack's repository][2]. The name of each patch file encodes the Linux kernel version where the patch must be applied to as well as the processor architecture supported. The format is as follows:
+Starting from PMCTrack's v2.0, and thanks to the development efforts behind the [PMCSched](/pmcsched) project, PMCTrack now works with vanilla Linux kernels. Specifically, Linux kernel v5.9.x and above are highly recommended to enjoy the full functionality of the tool, including the new [PMCSched subsystem](/pmcsched). 
 
-    pmctrack_linux-<kernel_version>_<architecture>.patch 
+
+For earlier versions of PMCTrack, and for platforms not officially supporting kernel versions newer than v5.8.x (such as the Odroid-XU4 board), a patched Linux kernel must be installed on the machine.
+
+#### Patching the kernel (older systems)
+
+A number of kernel patches for various Linux versions can be found in the `src/kernel-patches` directory. The name of each patch file encodes the Linux kernel version where the patch must be applied to as well as the processor architecture supported. The format is as follows: 
+
+	pmctrack_linux-<kernel_version>_<architecture>.patch 
+
+
+If a patch is not available for the desired kernel version, a custom patch can be easily created with git. More information on this can be found in this [tutorial](/migrating-patches). 
+
+To apply the patch run the following command from the root directory of the kernel sources:
+
+```
+patch -p1 < <path_to_patch_file> 
+```
 
 
 To build the kernel for PMCTrack, the following option must be enabled when configuring the kernel:
@@ -23,18 +39,20 @@ To build the kernel for PMCTrack, the following option must be enabled when conf
     CONFIG_PMCTRACK=y
 
 
-The kernel headers for the patched Linux version must be installed on the system as well. This is necessary for a successful out-of-tree build of PMCTrack's kernel module. An out-of-tree-ready Makefile can be found in the sources for the different flavors of the kernel module.
+#### Additional requirements  
+
+The kernel headers for the current Linux version must be installed on the system as well. This is necessary for a successful out-of-tree build of PMCTrack's kernel module. An out-of-tree-ready Makefile can be found in the sources for the different flavors of the kernel module.
 
 Most PMCTrack user-level components are written in C, and do not depend on any external library, (beyond the libc, of course). A separate Makefile is provided for *libpmctrack* as well as for the various command-line tools. As such, it should be straightforward to build these software components on most Linux distributions.
 
-The PMCTrack-GUI application, a Python front-end for the `pmctrack` command-line tool, has been recently integrated into PMCTrack's main repository. This application extends the capabilities of the PMCTrack stack with features such as an SSH-based remote monitoring mode or the ability to plot the values of user-defined performance metrics in real time. This GUI application runs on Linux and Mac OS X and has the following software dependencies:
+The PMCTrack-GUI application, a Python front-end for the `pmctrack` command-line tool, was integrated into PMCTrack's main repository. This application extends the capabilities of the PMCTrack stack with features such as an SSH-based remote monitoring mode or the ability to plot the values of user-defined performance metrics in real time. This GUI application runs on Linux and Mac OS X and has the following software dependencies:
 
 *   Python v2.7
 *   Matplotlib (Python library)
 *   sshpass (command)
 *   WxPython v3.0
 
-On Debian or Ubuntu the necessary software can be installed as follows:
+On Debian or Ubuntu the necessary software to run PMCTrack-GUI can be installed as follows:
 
     $ sudo apt-get install python2.7 python-matplotlib python-wxgtk3.0 sshpass 
 
@@ -60,7 +78,8 @@ On both Linux and Mac OS X, the `bin` directory, found in the root of PMCTrack's
 
 ### Building PMCTrack from source for ARM and x86 processors
 
-The `PMCTRACK_ROOT` environment variable must be defined for a successful execution of the various PMCTrack command-line tools. The `shrc` script found in the repository's root directory can be used to set the `PMCTRACK_ROOT` variable appropriately as well as to add command-line tools' directories to the PATH. To make this possible, run the following command in the root directory of the repository:
+Before building PMCTrack make sure a compatible kernel is running (it must be a patched one for PMCTrack versions earlier than 2.0!), and the associated kernel header files are installed on the system. The `PMCTRACK_ROOT` environment variable must be defined for a successful execution of the various PMCTrack command-line tools. The `shrc` script found in the repository's root directory can be used to set the `PMCTRACK_ROOT` variable appropriately as well as to add command-line tools' directories to the PATH. To make this possible, run the following command in the root directory of the repository:
+
 
     $ . shrc
 

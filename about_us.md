@@ -18,6 +18,7 @@ permalink: /about-us/
 
 ### Past Contributors
 
+*	Adrián García García (aka [@Mizadri](https://github.com/mizadri))
 *	Jorge Casas Hernán
 *	Abel Serrano Juste (aka [@Akronix][1])
 *	Germán Franco Dorca

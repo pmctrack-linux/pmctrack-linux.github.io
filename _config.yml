@@ -72,3 +72,4 @@ jekyll-mentions:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#   - docker

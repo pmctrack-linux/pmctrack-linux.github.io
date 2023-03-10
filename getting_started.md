@@ -20,15 +20,18 @@ After that, load any of the available flavors of the PMCTrack's kernel module co
 
 The following table summarizes the properties of the various flavors of the kernel module:
 
-| Name       | Path of the .ko file                             | Supported processors                                         |
-| ---------- | ------------------------------------------------ | ------------------------------------------------------------ |
+
+| Name | Path of the .ko file | Supported processors |
+| -----| ---------------------| ---------------------|
 | intel-core | `src/modules/pmcs/intel-core/mchw_intel_core.ko` | Most Intel multi-core processors are compatible with this module, including recent processors based on the Intel "Broadwell" microarchitecture. |
-| amd        | `src/modules/pmcs/amd/mchw_amd.ko`               | This module has been successfully tested on AMD opteron processors. Nevertheless, it should be compatible with all AMD multicore processors. |
-| arm        | `src/modules/pmcs/arm/mchw_arm.ko`               | This module has been successfully tested on ARM systems featuring 32-bit big.LITTLE processors, which combine ARM Cortex A7 cores with and ARM Cortex A15 cores. Specifically, tests were performed on the ARM Coretile Express Development Board (TC2). |
-| odroid-xu  | `src/modules/pmcs/odroid-xu/mchw_odroid_xu.ko`   | Specific module for Odroid XU3 and XU4 boards. A detailed tutorial on how to install PMCTrack on any of these boards can be found [here][2]. More information about these boards can be found at [www.hardkernel.com][3] |
-| arm64      | `src/modules/pmcs/arm64/mchw_arm64.ko`           | This module has been successfully tested on ARM systems featuring 64-bit big.LITTLE processors, which combine ARM Cortex A57 cores with and ARM Cortex A53 cores. Specifically, tests were performed on the ARM Juno Development Board. |
-| xeon-phi   | `src/modules/pmcs/xeon-phi/mchw_phi.ko`          | Intel Xeon Phi Coprocessor                                   |
-| core2      | `src/modules/pmcs/phi/mchw_core2.ko`             | This module has been specifically designed for the Intel QuickIA prototype system. The Intel QuickIA is a dual-socket asymmetric multicore system that features a quad-core Intel Xeon E5450 processor and a dual-core Intel Atom N330. The module also works with Intel Atom processors as well as "old" Intel multicore processors, such as the Intel Core 2 Duo. Nevertheless, given the numerous existing hacks for the QuickIA in this module, users are advised to use the more general "intel-core" flavor. |
+| amd | `src/modules/pmcs/amd/mchw_amd.ko` | This module has been successfully tested on AMD opteron processors. Nevertheless, it should be compatible with all AMD multicore processors. |
+| arm | `src/modules/pmcs/arm/mchw_arm.ko` | This module has been successfully tested on ARM systems featuring 32-bit big.LITTLE processors, which combine ARM Cortex A7 cores with and ARM Cortex A15 cores. Specifically, tests were performed on the ARM Coretile Express Development Board (TC2). |
+| odroid-xu | `src/modules/pmcs/odroid-xu/mchw_odroid_xu.ko` | Specific module for Odroid XU3 and XU4 boards. More information on these boards can be found at [www.hardkernel.com](http://www.hardkernel.com) |
+| arm64 | `src/modules/pmcs/arm64/mchw_arm64.ko` | This module has been successfully tested on ARM systems featuring 64-bit big.LITTLE processors, which combine ARM Cortex A57 cores with and ARM Cortex A53 cores. Specifically, tests were performed on the ARM Juno Development Board. |
+| xeon-phi | `src/modules/pmcs/xeon-phi/mchw_phi.ko` | Intel Xeon Phi Coprocessor |
+| core2 | `src/modules/pmcs/phi/mchw_core2.ko` | This module has been specifically designed for the Intel QuickIA prototype system. The Intel QuickIA is a dual-socket asymmetric multicore system that features a quad-core Intel Xeon E5450 processor and a dual-core Intel Atom N330. The module also works with Intel Atom processors as well as "old" Intel multicore processors, such as the Intel Core 2 Duo. Nevertheless, given the numerous existing hacks for the QuickIA in this module, users are advised to use the more general "intel-core" flavor.  |
+| perf | `src/modules/pmcs/perf/mchw_perf.ko` | Backend that uses Perf Events's kernel API to access performance monitoring counters. It currently works for Intel, AMD, ARMv7 and ARMv8 processors, only. |
+
 
 Once the most suitable kernel model for the system has been identified, the module can be loaded in the running PMCTrack-enabled kernel as follows:
 
@@ -273,7 +276,6 @@ The `pmc-events` command can be used to list the virtual counters exported by th
 
     $ pmc-events -V
     [Virtual counters]
-    
     energy_pkg
     energy_dram
 
