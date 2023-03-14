@@ -228,7 +228,7 @@ Another way of accessing PMCTrack functionality from user space is via *libpmctr
 
 ### Using PMCTrack from the OS scheduler
 
-PMCTrack allows any scheduling algorithm in the Linux kernel (i.e., scheduling class) to collect per-thread monitoring data, thus making it possible to drive scheduling decisions based on tasks' memory behavior or other runtime properties, such as energy consumption. Turning on this mode for a particular thread from the scheduler's code boils down to activating the `prof_enabled` flag in the thread's descriptor. This flag is added to Linux's task structure when applying PMCTrack's kernel patch.
+PMCTrack allows any scheduling algorithm in the Linux kernel (i.e., scheduling class) to collect per-thread monitoring data, thus making it possible to drive scheduling decisions based on tasks' memory behavior or other runtime properties, such as energy consumption. Turning on this mode for a particular thread from the scheduler's code boils down to activating the `prof_enabled` flag in the thread's descriptor. 
 
 To ensure that the implementation of the scheduling algorithm that benefits from this feature remains architecture independent, the scheduler itself (implemented in the kernel) does not configure nor deals with performance counters directly. Instead, the active monitoring module in PMCTrack is in charge of feeding the scheduling policy with the necessary high-level performance monitoring metrics, such as a task's instruction per cycle ratio or its last-level-cache miss rate. As described in the next section, the active monitoring module can be selected by writing in a special file.
 

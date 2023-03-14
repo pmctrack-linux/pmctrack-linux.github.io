@@ -5,7 +5,7 @@ permalink: /migrating-patches/
 toc: false
 ---
 
-PMCTrack v2.0 and later works on top of vanilla kernels starting from v5.9.x. On systems requiring an older kernel, a patch must be applied. A number of PMCTrack kernel patches for various Linux versions can be found in the `src/kernel-patches` directory. If a patch is not available for the desired kernel version, a custom patch can be easily created with git.
+PMCTrack v2.0 and later works on top of vanilla kernels starting from v5.9.y. On systems requiring an older kernel, a patch must be applied. A number of PMCTrack kernel patches for various Linux versions can be found in the `src/kernel-patches` directory. If a patch is not available for the desired kernel version, a custom patch can be easily created with git.
 
 This tutorial describes how to adapt an existing kernel patch to a newer kernel version. To illustrate how this is done we will create a PMCTRack kernel patch for Linux v5.7.19, reusing an existing patch available for Linux v5.4.35.
 

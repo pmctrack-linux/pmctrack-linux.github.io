@@ -13,12 +13,11 @@ http://pmctrack.dacya.ucm.es/install/
 
 ### System requirements
 
-Starting from PMCTrack's v2.0, and thanks to the development efforts behind the [PMCSched](/pmcsched) project, PMCTrack now works with vanilla Linux kernels. Specifically, Linux kernel v5.9.x and above are highly recommended to enjoy the full functionality of the tool, including the new [PMCSched subsystem](/pmcsched). 
+Starting from PMCTrack's v2.0, and thanks to the development efforts behind the [PMCSched](/pmcsched) project, PMCTrack now works with vanilla Linux kernels. Specifically, Linux kernel v5.9.y and above are highly recommended to enjoy the full functionality of the tool, including the new [PMCSched subsystem](/pmcsched). 
 
+For platforms not officially supporting kernel versions newer than v5.8.x (such as the Odroid-XU4 board), a patched Linux kernel must be installed on the machine.
 
-For earlier versions of PMCTrack, and for platforms not officially supporting kernel versions newer than v5.8.x (such as the Odroid-XU4 board), a patched Linux kernel must be installed on the machine.
-
-#### Patching the kernel (older systems)
+#### Patching the kernel (legacy systems and older PMCTrack versions)
 
 A number of kernel patches for various Linux versions can be found in the `src/kernel-patches` directory. The name of each patch file encodes the Linux kernel version where the patch must be applied to as well as the processor architecture supported. The format is as follows: 
 
