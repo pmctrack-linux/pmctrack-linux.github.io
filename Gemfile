@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.10.0"
-gem "bulma-clean-theme"
+gem "bulma-clean-theme", "0.14.0"
 gem "jekyll-redirect-from"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 

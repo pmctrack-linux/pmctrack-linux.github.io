@@ -30,8 +30,8 @@ google_analytics: UA-76163836-1
 theme_color: '#333333'
 
 # Build settings
-theme: bulma-clean-theme
-#remote_theme: chrisrhymes/bulma-clean-theme
+#theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
