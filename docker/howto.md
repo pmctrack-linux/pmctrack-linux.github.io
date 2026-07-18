@@ -3,13 +3,13 @@
 1. Build custom docker image from the root directory of the website
 
 ```bash
-host:web-pmctrack user$ docker image build -t myjekyll -f docker/Dockerfile . 
+host:web-pmctrack user$ docker image build -t myjekyll-new -f docker/Dockerfile . 
 ```
 
 2. Run container as follows:
 
 ```bash
-docker container run --rm -it -v $PWD:/www -p 4000:4000 myjekyll bash
+docker container run --rm -it -v $PWD:/www -p 4000:4000 myjekyll-new bash
 ```
 
 ## Test web locally (from container)
@@ -47,5 +47,4 @@ Configuration file: /www/_config.yml
 #theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 ```
-
 
