@@ -4,5 +4,5 @@
 
 title: RDPart
 permalink: /rdpart/
-redirect_to: https://github.com/jcsaezal/pmctrack/releases/tag/v4.0
+redirect_to: https://github.com/artecs-group/pmctrack/tree/rdpart
 ---
