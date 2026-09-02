@@ -19,6 +19,8 @@ permalink: /publications/
 
 Journal articles, conference papers, thesis and other works using PMCTrack: 
 
+* J. C. Saez, C. Bilbao and M. Prieto-Matias. *An Opportunistic Elasticity Method for Improving System Throughput and CPU Utilization in Cloud Data Centers*, Concurrency and Computation: Practice and Experience, vol. 38, no. 16. Aug. 2026: e70898. DOI: [10.1002/cpe.70898](http://dx.doi.org/10.1002/cpe.70898). [PDF](/assets/papers/ccpe26-saez.pdf).
+
 * S. Mazzola, G. Ara, T. Benz, B. Forsberg, T. Cucinotta, L. Benini. Data-Driven Power Modeling and Monitoring via Hardware Performance Counters Tracking. arXiv preprint 2401.01826 (2024). [PDF](https://arxiv.org/pdf/2401.01826.pdf)
 
 * J. Rubio, C. Bilbao, J. C. Saez and M. Prieto-Matias. *Exploiting Elasticity via OS-runtime Cooperation to Improve CPU Utilization in Multicore Systems*. 32nd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing - PDP '24 (2024). [PDF](/assets/papers/pdp24_rubio.pdf)
@@ -45,7 +47,7 @@ Journal articles, conference papers, thesis and other works using PMCTrack:
 
 * A. Suyyagh. Dutto. *Towards Energy-Efficient Real-Time Computing in Embedded Systems*. Phd. Thesis, McGill University - Canada (2018). [PDF](https://escholarship.mcgill.ca/downloads/2b88qf24k)
 
-*  A. Garcia-Garcia, J.C. Saez, F. Castro, M. Prieto-Matias: *LFOC: A Lightweight Fairness-Oriented Cache Clustering Policy for Commodity Multicores*. Proceedings of the 48th International Conference on Parallel Processing (ICPP '19): pp. 14:1--14:10. (2019). ACM. ISBN: 978-1-4503-6295-5. DOI: [10.1145/3337821.3337925](https://doi.org/10.1145/3337821.3337925). [PDF](/assets/papers/icpp19-garcia.pdf)
+* A. Garcia-Garcia, J.C. Saez, F. Castro, M. Prieto-Matias: *LFOC: A Lightweight Fairness-Oriented Cache Clustering Policy for Commodity Multicores*. Proceedings of the 48th International Conference on Parallel Processing (ICPP '19): pp. 14:1--14:10. (2019). ACM. ISBN: 978-1-4503-6295-5. DOI: [10.1145/3337821.3337925](https://doi.org/10.1145/3337821.3337925). [PDF](/assets/papers/icpp19-garcia.pdf)
 
 * A. Garcia-Garcia, J.C. Saez, M. Prieto-Matias: *Contention-aware fair scheduling for asymmetric Single-ISA multicore systems*. IEEE Transactions on Computers, 67 (12): pp. 1703-1719. (2018). ISSN: 0018-9340. DOI: [10.1109/TC.2018.2836418](https://doi.org/10.1109/TC.2018.2836418)
 
@@ -61,7 +63,7 @@ Journal articles, conference papers, thesis and other works using PMCTrack:
 
 * J.C. Saez, A. Pousa, D. Chaver, M. Prieto: *ACFS: A Completely Fair Scheduler for Asymmetric Single-ISA Multicore Systems*. Proceedings of the 30th ACM/SIGAPP Symposium On Applied Computing (SAC 2015): pp. 2027--2032. (2015). ACM. ISBN: 978-1-4503-3196-8. DOI: [10.1145/2695664.2695714](https://doi.org/10.1145/2695664.2695714). [PDF](/assets/papers/sac15-saez.pdf)
 
-*  J.C. Saez, A. Pousa, F. Castro, D. Chaver, M. Prieto: *Exploring the Throughput-Fairness Trade-off on Asymmetric Multicore Systems*. Euro-Par 2014: Parallel Processing Workshops, Lecture Notes on Computer Science. 2nd Workshop on Runtime and Operating Systems for the Many-core Era , LNCS 8806: pp. 326--337. (2014). Springer. ISBN: 978-3-319-14312-5. DOI: [10.1007/978-3-319-14313-2_28](https://doi.org/10.1007/978-3-319-14313-2_28).
+* J.C. Saez, A. Pousa, F. Castro, D. Chaver, M. Prieto: *Exploring the Throughput-Fairness Trade-off on Asymmetric Multicore Systems*. Euro-Par 2014: Parallel Processing Workshops, Lecture Notes on Computer Science. 2nd Workshop on Runtime and Operating Systems for the Many-core Era , LNCS 8806: pp. 326--337. (2014). Springer. ISBN: 978-3-319-14312-5. DOI: [10.1007/978-3-319-14313-2_28](https://doi.org/10.1007/978-3-319-14313-2_28).
 
 * J.C. Saez, F. Castro, D. Chaver, M. Prieto: *Delivering Fairness and Priority Enforcement on Asymmetric Multicore Systems via OS Scheduling*. Proceedings of the ACM SIGMETRICS/International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS'13): pp. 343--344. (2013). ACM. ISBN: 978-1-4503-1900-3. DOI: [10.1145/2494232.2465532](https://doi.org/10.1145/2494232.2465532). [PDF](/assets/papers/sigmetrics13-saez.pdf)
 
